@@ -2,14 +2,38 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-project1 = "Project XYZ"
-project2 = "Project LMN"
-project3 = "Project XYZ"
-fund1 = 1000
-fund2 = 1250
-fund3 = 800
+class Fundraiser
+  attr_accessor :name
+  attr_reader :fund, :goal, :togo
+  def initialize(name, fund, goal)
+    @name = name.capitalize
+    @fund = fund
+    @goal = goal
+  end
+  def togo
+    @togo = @goal - @fund
+    "#{@name} has $#{@togo} to go before being fully funded!"
+  end
+  def to_s
+    "#{@name} has $#{@fund} in funding towards a goal of $#{@goal}"
+  end
+  def add_funds(amount)
+    @fund = @fund + amount
+    puts "#{@name} got more funds!"
+  end
+  def lost_funds(amount)
+    @fund = @fund - amount
+    puts "#{@name} lost some funds!"
+  end
+end
 
-puts "#{project1} has $#{fund1} in funding"
-puts "#{project2} has $#{fund2} in funding"
-puts "#{project3} has $#{fund3} in funding"
-puts "\nProjects:\n\t#{project1}\n\t#{project2}\n\t#{project3}"
+project1 = Fundraiser.new("project LMN", 500, 3000)
+project2 = Fundraiser.new("project XYZ", 25, 75)
+puts project1
+puts project2
+project1.lost_funds(25)
+project2.add_funds(25)
+puts project1
+puts project2
+puts project1.togo
+puts project2.togo

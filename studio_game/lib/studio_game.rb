@@ -1,13 +1,14 @@
 # To change this license header, choose License Headers in Project Properties.
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
+require_relative 'game'
 
-def say_hello(name, health=100)
-  time = Time.now
-  "I'm #{name.capitalize} with a health of #{health} as of #{time.strftime("%H:%M:%S")}"
-end
+player1 = Player.new("moe")
+player2 = Player.new("larry", 60)
+player3= Player.new("curly", 125)
 
-puts say_hello("larry", 60)
-puts say_hello("curly", 125)
-puts say_hello("moe")
-puts say_hello("shemp", 90)
+knuckleheads = Game.new("Knuckleheads")
+knuckleheads.add_player(player1)
+knuckleheads.add_player(player2)
+knuckleheads.add_player(player3)
+knuckleheads.play
