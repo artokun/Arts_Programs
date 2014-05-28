@@ -37,3 +37,7 @@ puts project1
 puts project2
 puts project1.togo
 puts project2.togo
+
+#TODO
+#1. create a Project class
+#2. finish filling out the rspec testing
