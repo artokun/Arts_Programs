@@ -41,3 +41,5 @@ puts project2.togo
 #TODO
 #1. create a Project class
 #2. finish filling out the rspec testing
+#3. use the Die class to determine whether a fundraiser get funds or loses it depending on whether the die is even or odd
+#4. create a module called FundingRound, delegating the functions described in #3
