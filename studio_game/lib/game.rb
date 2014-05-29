@@ -14,13 +14,17 @@ class Game
   def add_player(player)
     @players<<(player)
   end
-  def play
+  def play(rounds)
     puts "There are #{@players.size} players in #{@title}:"
     @players.each do |player|
       puts player
     end
-    @players.each do |player|
-      GameTurn.take_turn(player)
+    1.upto(rounds) do |round|
+      puts "\nRound #{round}:"
+      @players.each do |player|
+        GameTurn.take_turn(player)
+        puts player
+      end
 =begin
       die = Die.new
       number_rolled = die.roll
@@ -33,7 +37,6 @@ class Game
         player.w00t
       end
 =end
-      puts player
     end    
   end
 end
