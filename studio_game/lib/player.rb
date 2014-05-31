@@ -9,6 +9,9 @@ class Player
     @name = name.capitalize
     @health = health
   end
+  def <=>(other)#changed how the space ship operates while sorting players
+    other.score <=> score
+  end
   def to_s
     "I'm #{@name} with a health of #{@health} and a score of #{score}."
   end

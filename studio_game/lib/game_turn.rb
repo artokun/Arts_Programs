@@ -1,5 +1,6 @@
 require_relative 'die'
 require_relative 'player'
+require_relative 'treasure_trove'
 
 module GameTurn
   #modules need the self.xxx(params) to work as expected
@@ -13,5 +14,7 @@ module GameTurn
       else
         player.w00t
     end
+    treasure = TreasureTrove.random
+    puts "#{player.name} found a #{treasure.name} worth #{treasure.points} points."
   end
 end

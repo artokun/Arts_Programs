@@ -43,3 +43,9 @@ puts project2.togo
 #2. finish filling out the rspec testing
 #3. use the Die class to determine whether a fundraiser get funds or loses it depending on whether the die is even or odd
 #4. create a module called FundingRound, delegating the functions described in #3
+#5. insert a one-time request for funding before funding rounds begin
+#6. When funding rounds are over, print out the number of fully funded and underfunded projects
+#7. print off a list of projects that still need contributions
+#8. make different pledge types, bronze, silver and gold and use those to fund projects
+#9. Model the concept of a pledge as a struct with name and amount attributes. Then use the struct
+#.. to create three Pledge objects in an array called PLEDGES (a constant) in a PledgePool module.

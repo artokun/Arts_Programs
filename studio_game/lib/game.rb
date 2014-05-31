@@ -5,6 +5,7 @@
 require_relative 'player'
 require_relative 'die'
 require_relative 'game_turn'
+require_relative 'treasure_trove'
 class Game
   attr_reader :title
   def initialize(title)
@@ -19,29 +20,38 @@ class Game
 
     puts "\n#{@title} Statistics"
     puts "\n#{@strong_players.length} strong players:"
-    @strong_players.each do |strong|
-      puts "#{strong.name} (#{strong.score})"
+    @strong_players.each do |player|
+      print_name_and_health(player)
     end
     puts "\n#{@wimpy_players.length} wimpy players:"
-    @wimpy_players.each do |wimpy|
-      puts "#{wimpy.name} (#{wimpy.score})"
+    @wimpy_players.each do |player|
+      print_name_and_health(player)
     end
-    @sorted_players = @players.sort{|a,b| b.score <=> a.score}
-    puts "\n#{@title} High Scores\n"
-    @sorted_players.each do |sorted|
-      puts "#{sorted.name.ljust(20,'.')} #{sorted.score}"
+    puts "\nHigh Scores:"
+    @players.sort.each do |player|
+      formatted_name = player.name.ljust(20, '.')
+      puts "#{formatted_name} #{player.score}"
     end
+  end
+  def print_name_and_health(player)
+    puts "#{player.name} (#{player.health})"
   end
   def play(rounds)
     puts "There are #{@players.size} players in #{@title}:"
     @players.each do |player|
       puts player
     end
+    treasures = TreasureTrove::TREASURES
+    puts "\nThere are #{treasures.size} treasures to be found\n"
+    treasures.each do |treasure|
+      puts "A #{treasure.name} is worth #{treasure.points} points"
+    end
     1.upto(rounds) do |round|
       puts "\nRound #{round}:"
       @players.each do |player|
         GameTurn.take_turn(player)
         puts player
+        puts "\n"
       end
 =begin
       die = Die.new
