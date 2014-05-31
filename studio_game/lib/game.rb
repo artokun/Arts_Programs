@@ -14,6 +14,24 @@ class Game
   def add_player(player)
     @players<<(player)
   end
+  def print_stats
+    @strong_players, @wimpy_players = @players.partition { |player| player.strong?}
+
+    puts "\n#{@title} Statistics"
+    puts "\n#{@strong_players.length} strong players:"
+    @strong_players.each do |strong|
+      puts "#{strong.name} (#{strong.score})"
+    end
+    puts "\n#{@wimpy_players.length} wimpy players:"
+    @wimpy_players.each do |wimpy|
+      puts "#{wimpy.name} (#{wimpy.score})"
+    end
+    @sorted_players = @players.sort{|a,b| b.score <=> a.score}
+    puts "\n#{@title} High Scores\n"
+    @sorted_players.each do |sorted|
+      puts "#{sorted.name.ljust(20,'.')} #{sorted.score}"
+    end
+  end
   def play(rounds)
     puts "There are #{@players.size} players in #{@title}:"
     @players.each do |player|
