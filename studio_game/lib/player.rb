@@ -1,6 +1,7 @@
 # To change this license header, choose License Headers in Project Properties.
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
+require_relative 'treasure_trove'
 
 class Player
   attr_reader :health, :score
@@ -8,6 +9,7 @@ class Player
   def initialize(name, health=100)
     @name = name.capitalize
     @health = health
+    @found_treasures = Hash.new(0)
   end
   def <=>(other)#changed how the space ship operates while sorting players
     other.score <=> score
@@ -25,6 +27,15 @@ class Player
   end
   def score
     @score = @name.length + @health
+  end
+  def found_treasure(treasure)
+    #@found_treasures += {treasure.name => treasure.points} < not the right way
+    @found_treasures[treasure.name] += treasure.points
+    puts "#{@name} found a #{treasure.name} worth #{treasure.points} points."
+    puts "#{@name}'s treasures: #{@found_treasures}'"
+  end
+  def points
+    @found_treasures.values.reduce(0, :+)
   end
   def strong?
     @health > 100
