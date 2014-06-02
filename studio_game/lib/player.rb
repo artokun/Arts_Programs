@@ -15,7 +15,7 @@ class Player
     other.score <=> score
   end
   def to_s
-    "I'm #{@name} with a health of #{@health} and a score of #{score}."
+    "I'm #{@name} with health = #{@health}, points = #{points}, and score = #{score}."
   end
   def blam
     @health -= 10
@@ -26,13 +26,13 @@ class Player
     puts "#{@name} got w00ted!"
   end
   def score
-    @score = @name.length + @health
+    @score = @health + points
   end
   def found_treasure(treasure)
     #@found_treasures += {treasure.name => treasure.points} < not the right way
     @found_treasures[treasure.name] += treasure.points
     puts "#{@name} found a #{treasure.name} worth #{treasure.points} points."
-    puts "#{@name}'s treasures: #{@found_treasures}'"
+    puts "#{@name}'s treasures: #{@found_treasures}."
   end
   def points
     @found_treasures.values.reduce(0, :+)
