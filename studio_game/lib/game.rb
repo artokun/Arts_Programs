@@ -27,6 +27,10 @@ class Game
     @wimpy_players.each do |player|
       print_name_and_health(player)
     end
+    @players.sort.each do |player|
+      puts "\n#{player.name}'s points totals:"
+      puts "#{player.points} grand total points"
+    end
     puts "\nHigh Scores:"
     @players.sort.each do |player|
       formatted_name = player.name.ljust(20, '.')
