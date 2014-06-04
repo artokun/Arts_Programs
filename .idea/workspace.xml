@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="29fb94d4-7e0a-4bf9-aef7-e5a58dcc2933" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studio_game/lib/game.rb" afterPath="$PROJECT_DIR$/studio_game/lib/game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studio_game/lib/player_spec.rb" afterPath="$PROJECT_DIR$/studio_game/lib/player_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studio_game/lib/game_spec.rb" afterPath="$PROJECT_DIR$/studio_game/lib/game_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Arts_Programs.iws" />
@@ -17,11 +17,11 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Arts_Programs@game.coverage" NAME="game Coverage Results" MODIFIED="1401543110117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
-    <SUITE FILE_PATH="coverage/Arts_Programs@studio_game.coverage" NAME="studio_game Coverage Results" MODIFIED="1401825272277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
+    <SUITE FILE_PATH="coverage/Arts_Programs@studio_game.coverage" NAME="studio_game Coverage Results" MODIFIED="1401856576040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
     <SUITE FILE_PATH="coverage/Arts_Programs@My_behaviour__Arts_Programs.coverage" NAME="My behaviour: Arts_Programs Coverage Results" MODIFIED="1401164820839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
     <SUITE FILE_PATH="coverage/Arts_Programs@Run_spec__player_spec___Arts_Programs.coverage" NAME="Run spec 'player_spec': Arts_Programs Coverage Results" MODIFIED="1401825138059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
     <SUITE FILE_PATH="coverage/Arts_Programs@IRB_console__Arts_Programs.coverage" NAME="IRB console: Arts_Programs Coverage Results" MODIFIED="1401614167431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Arts_Programs" />
-    <SUITE FILE_PATH="coverage/Arts_Programs@Run_spec__game_spec___Arts_Programs.coverage" NAME="Run spec 'game_spec': Arts_Programs Coverage Results" MODIFIED="1401696903985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
+    <SUITE FILE_PATH="coverage/Arts_Programs@Run_spec__game_spec___Arts_Programs.coverage" NAME="Run spec 'game_spec': Arts_Programs Coverage Results" MODIFIED="1401856590266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
     <SUITE FILE_PATH="coverage/Arts_Programs@Run_spec__treasure_trove_spec___Arts_Programs.coverage" NAME="Run spec 'treasure_trove_spec': Arts_Programs Coverage Results" MODIFIED="1401697411428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
     <SUITE FILE_PATH="coverage/Arts_Programs@player.coverage" NAME="player Coverage Results" MODIFIED="1401526478912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/studio_game/lib" MODULE_NAME="Arts_Programs" />
   </component>
@@ -40,8 +40,8 @@
       <file leaf-file-name="game.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/studio_game/lib/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33587787" vertical-offset="506" max-vertical-offset="1738">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.21411192" vertical-offset="858" max-vertical-offset="1958">
+              <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="player.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/studio_game/lib/player.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1276">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1276">
               <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
               <folding />
             </state>
@@ -90,8 +90,8 @@
       <file leaf-file-name="game_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/studio_game/lib/game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1254">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="991" max-vertical-offset="1606">
+              <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -139,11 +139,11 @@
         <option value="$PROJECT_DIR$/studio_game/lib/studio_game.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/treasure_trove.rb" />
         <option value="$PROJECT_DIR$/crowdfund/lib/crowdfund.rb" />
-        <option value="$PROJECT_DIR$/studio_game/lib/game_spec.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/treasure_trove_spec.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/game_turn.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/player.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/player_spec.rb" />
+        <option value="$PROJECT_DIR$/studio_game/lib/game_spec.rb" />
         <option value="$PROJECT_DIR$/studio_game/lib/game.rb" />
       </list>
     </option>
@@ -208,7 +208,7 @@
     <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
     <property name="SearchEverywhereHistoryKey" value="score&#9;null&#9;null&#10;take&#9;null&#9;null" />
   </component>
-  <component name="RunManager" selected="Ruby.studio_game">
+  <component name="RunManager" selected="RSpec.Run spec 'game_spec': Arts_Programs">
     <configuration default="false" name="game" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Arts_Programs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -438,10 +438,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.studio_game" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'player_spec': Arts_Programs" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'treasure_trove_spec': Arts_Programs" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'game_spec': Arts_Programs" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'treasure_trove_spec': Arts_Programs" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'game_spec': Arts_Programs" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.studio_game" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'player_spec': Arts_Programs" />
         <item index="4" class="java.lang.String" itemvalue="Ruby.game" />
       </list>
     </recent_temporary>
@@ -487,7 +487,6 @@
     <frame x="6" y="0" width="954" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33738938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853982" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16924779" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -503,6 +502,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -552,6 +552,22 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/player_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="2024">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/studio_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="440">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/studio_game/lib/game.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
@@ -877,42 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studio_game/lib/treasure_trove.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/studio_game/lib/treasure_trove_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="1122">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studio_game/lib/game_turn.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studio_game/lib/game_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1254">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studio_game/lib/player.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1276">
-          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -933,10 +917,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/treasure_trove.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/game_turn.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/game_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1606">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio_game/lib/player.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1276">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/studio_game/lib/game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33587787" vertical-offset="506" max-vertical-offset="1738">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.21411192" vertical-offset="858" max-vertical-offset="1958">
+          <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
           <folding />
         </state>
       </provider>

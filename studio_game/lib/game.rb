@@ -36,6 +36,16 @@ class Game
       formatted_name = player.name.ljust(20, '.')
       puts "#{formatted_name} #{player.score}"
     end
+    puts "\n#{total_points} total points from treasures found"
+  end
+  def total_points
+    total_points = Array.new
+    @players.sort.each do |player|
+      points = player.points
+      total_points.push (points)
+    end
+    total_points.reduce(0, :+)
+    #OR BETTER: @players.reduce(0) { |sum, player| sum + player.points }
   end
   def print_name_and_health(player)
     puts "#{player.name} (#{player.health})"
