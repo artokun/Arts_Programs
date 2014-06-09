@@ -49,3 +49,4 @@ puts project2.togo
 #8. make different pledge types, bronze, silver and gold and use those to fund projects
 #9. Model the concept of a pledge as a struct with name and amount attributes. Then use the struct
 #.. to create three Pledge objects in an array called PLEDGES (a constant) in a PledgePool module.
+#10. keep track of pledges using hashes between rounds and accumulate them at the end
